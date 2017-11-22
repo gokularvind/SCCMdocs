@@ -57,6 +57,7 @@ SQL Server transactional replication is supported only for replicating objects t
 ##  <a name="bkmk_SQLVersions"></a> Supported versions of SQL Server  
  In a hierarchy with multiple sites, different sites can use different versions of SQL Server to host the site database so long as the following are true:
  -  Configuration Manager supports the versions of SQL Server that you use.
+ -  Before proceeding SCCM 1710 kindly verify SQL compatability in the Database. If your SQL COMPATIBILITY_LEVEL<110 it throws error         while upgrading site database
  -  The SQL Server versions you use remain in support by Microsoft.
  -  SQL Server supports replication between the two versions of SQL Server.  For example, [SQL Server does not support replication between SQL Server 2008 R2 and SQL Server 2016](https://docs.microsoft.com/sql/relational-databases/replication/deprecated-features-in-sql-server-replication).
 
